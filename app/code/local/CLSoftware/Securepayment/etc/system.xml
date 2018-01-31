@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <securepaymentmethods translate="label" module="securepayment">
+            <label>Filter Payment Methods</label>
+            <sort_order>99999</sort_order>
+        </securepaymentmethods>
+    </tabs>    
+    <sections>
+        <securepaymentmethods_prefs translate="label" module="securepayment">
+            <label>Preferences</label>
+            <tab>securepaymentmethods</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+             <groups>
+                <payments translate="label">
+                    <label>Secure Payment Methods</label>
+                    <frontend_type>text</frontend_type>
+                    <sort_order>1</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <fld_secure_payment_methods>
+                            <label>Select the secure payment methods:</label>
+                            <frontend_type>multiselect</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <source_model>securepayment/system_config_source_payment_allactivemethods</source_model>                    
+                        </fld_secure_payment_methods>
+                    </fields>
+                </payments>
+            </groups>
+        </securepaymentmethods_prefs>
+    </sections>
+</config>     

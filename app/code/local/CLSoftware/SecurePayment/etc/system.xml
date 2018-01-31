@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <tabs>
+        <securepaymentmethods translate="label" module="securepayment">
+            <label>Filter Payment Methods</label>
+            <sort_order>99999</sort_order>
+        </securepaymentmethods>
+    </tabs>    
+    <sections>
+        <securepaymentmethods_prefs translate="label" module="securepayment">
+            <label>Preferences</label>
+            <tab>securepaymentmethods</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>1000</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+        </securepaymentmethods_prefs>
+    </sections>
+</config>

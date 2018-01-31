@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CLSoftware_Securepayment>
+            <version>1.0.0</version>
+        </CLSoftware_Securepayment>
+    </modules>
+    
+    <global>
+        <models>
+            <!-- Wir geben unserem Modul hier einen eigenen Namensraum -->
+            <securepayment>
+                <class>CLSoftware_Securepayment_Model</class>
+            </securepayment>
+        </models>
+        <helpers>
+            <securepayment>
+                <class>CLSoftware_Securepayment_Helper</class>
+            </securepayment>
+        </helpers>  
+        <resources>
+            <clsoftware_securepayment_setup>
+                <setup>
+                    <module>CLSoftware_SecurePayment</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </clsoftware_securepayment_setup>
+        </resources>
+        <blocks>
+                <checkout>
+                        <rewrite>
+                                <onepage_payment_methods>CLSoftware_Securepayment_Block_Checkout_Onepage_Payment_Methods</onepage_payment_methods>
+                        </rewrite>
+                </checkout>
+        </blocks>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <securepaymentmethods_prefs>
+                                            <title>Define secure paymentmethods.</title>
+                                        </securepaymentmethods_prefs>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

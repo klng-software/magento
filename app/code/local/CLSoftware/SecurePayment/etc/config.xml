@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CLSoftware_SecurePayment>
+            <version>1.0.0</version>
+        </CLSoftware_SecurePayment>
+    </modules>
+    <helpers>
+        <CLSoftware_SecurePayment>
+            <class>CLSoftware_SecurePayment_Helper</class>
+        </CLSoftware_SecurePayment>
+    </helpers>  
+    <global>
+        <resources>
+            <clsoftware_securepayment_setup>
+                <setup>
+                    <module>CLSoftware_SecurePayment</module>
+                    <class>Mage_Eav_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </clsoftware_securepayment_setup>
+        </resources>
+    </global>
+    <adminhtml>
+        <acl>
+            <resources>
+                <admin>
+                    <children>
+                        <system>
+                            <children>
+                                <config>
+                                    <children>
+                                        <securepaymentmethods_prefs>
+                                            <title>Define secure paymentmethods.</title>
+                                        </securepaymentmethods_prefs>
+                                    </children>
+                                </config>
+                            </children>
+                        </system>
+                    </children>
+                </admin>
+            </resources>
+        </acl>
+    </adminhtml>
+</config>

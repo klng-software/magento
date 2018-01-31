@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <CLSoftware_Securepayment>
+            <active>true</active>
+            <codePool>local</codePool>
+        </CLSoftware_Securepayment>
+    </modules>
+</config>
