@@ -1,3 +1,9 @@
+#--------------------------#
+# Magento Default Files    #
+#--------------------------#
+
+/app/etc/local.xml
+
 /media/*
 !/media/.htaccess
 
@@ -10,6 +16,7 @@
 !/media/dhl/logo.jpg
 
 !/media/downloadable
+
 /media/downloadable/*
 !/media/downloadable/.htaccess
 
@@ -34,4 +41,6 @@
 !/var/package
 /var/package/*
 !/var/package/*.xml
+<<<<<<< HEAD
 sitemap.xml
+
